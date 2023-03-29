@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+
+}
+
+header {
+    /* background-color: #f3f1f1; */
+    color: #504949;
+    opacity: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-left: 10%;
+   
+    
+}
+
+
+#timer {
+    color: #504949;
+    font-size: 10rem;
+    opacity: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 20px; */
+}
+
+
+.editor-container {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Change from 'center' to 'flex-start' */
+    text-align: left; /* Add this property to align the text of the editor to the left */
+    padding-left: 10%; /* Add this line to add padding to the left */
+    padding-right: 10%;
+    padding-top: 50px;
+}
+
+
+  .editor-placeholder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 4rem;
+    color: gray;
+  }
+  
+
+
+.prompt {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-align: left; /* Add this property to align the text of the prompt to the left */
+    color: #504949;
+}
+
+
+#editor {
+    border: none;
+    font-size: 4rem;
+    text-align: left;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: pre-wrap;
+    position: relative;
+    padding-bottom: 100px;
+    
+    
+}
+  
+
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(placeholder-text);
+    opacity: 8%;
+}
+
+#editor:focus:before {
+    content: none;
+  }
+
+
+  .submit-button {
+    background-color: #504949;; /* Green background color */
+    border: none; /* Remove default border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Display as a block element */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Add cursor on hover */
+    border-radius: 4px; /* Add rounded corners */
+  }
+  
+
+
+
